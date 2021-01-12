@@ -1,0 +1,116 @@
+#contact {
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+#contact > * {
+  animation: fadein 1s backwards;
+  height: 100%;
+}
+#contact-image {
+  display: none;
+}
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+  animation-delay: 100ms;
+}
+#contact-titles h1 {
+  font-size: 4em;
+  animation-delay: 150ms;
+}
+#contact-info p {
+  font-weight: bold;
+  text-align: left;
+  margin: 0.3em 0;
+  animation-delay: 200ms;
+}
+#contact-info a {
+  color: white;
+  font-size: 1.5em;
+  animation-delay: 200ms;
+}
+#contact-form {
+  border: 1px solid orange;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-delay: 300ms;
+}
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.form-info {
+  margin: 0.3em 0;
+  padding: 0.2em;
+}
+#contact-form h2 {
+  margin-top: 1em;
+  letter-spacing: inherit;
+  font-weight: 100;
+  font-size: 4em;
+}
+.form-label {
+  display: none;
+  font-weight: bold;
+}
+#contact-form input[type="submit"] {
+  width: 50%;
+  align-self: flex-end;
+  background-color: #1c849e;
+  border: none;
+  padding: 0.3em;
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+@media screen and (min-width: 568px) {
+  #contact {
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact-form h2 {
+    margin: 0;
+  }
+  .form-label {
+    display: block;
+    align-self: flex-start;
+  }
+  .form-info::placeholder {
+    opacity: 0;
+  }
+  #contact-form input[type="submit"] {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #contact {
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 2em;
+    width: 90vw;
+  }
+  #contact-image {
+    display: block;
+  }
+  #contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #contact-info a {
+    font-size: 2em;
+  }
+  .form-info {
+    height: 3em;
+  }
+  textarea.form-info {
+    height: 15em;
+  }
+}

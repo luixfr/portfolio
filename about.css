@@ -1,0 +1,110 @@
+#about {
+  grid-template-columns: 1fr;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#about-images {
+  display: none;
+}
+#about-images .photo {
+  animation: portfolio 1s ease backwards;
+}
+#about-images .photo:first-child {
+  animation-delay: 0ms;
+}
+#about-images .photo:nth-child(2) {
+  animation-delay: 100ms;
+}
+#about-images .photo:nth-child(3) {
+  animation-delay: 200ms;
+}
+#about-images .photo:nth-child(4) {
+  animation-delay: 200ms;
+}
+#about-images .photo:nth-child(5) {
+  animation-delay: 100ms;
+}
+#about-images .photo:nth-child(6) {
+  animation-delay: 200ms;
+}
+#about-images .photo:nth-child(7) {
+  animation-delay: 300ms;
+}
+#about-images .photo:nth-child(8) {
+  animation-delay: 200ms;
+}
+#about-images .photo:nth-child(9) {
+  animation-delay: 400ms;
+}
+#about-images .photo:nth-child(10) {
+  animation-delay: 500ms;
+}
+
+#about-titles {
+  text-align: right;
+  animation: slidein 0.5s ease backwards;
+}
+#about-info {
+  animation: slidein 0.5s ease 100ms backwards;
+}
+#about-titles h1 {
+  text-align: left;
+}
+@media screen and (min-width: 568px) {
+  #about {
+    column-gap: 1em;
+  }
+  #about-titles {
+    display: block;
+  }
+  #about-info {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  #about-images {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    columns: 3;
+    gap: 0.3em;
+    grid-row: 3 / 4;
+  }
+  #about-images .photo {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #about {
+    grid-template-columns: 1fr 1fr;
+    /*padding-left: 8vw;
+    padding-right: 8vw; */
+    grid-template-areas:
+      "gallery title "
+      "gallery about";
+  }
+  #about-images {
+    grid-area: gallery;
+    columns: 3;
+  }
+  #about-titles {
+    grid-area: title;
+  }
+  #about-info {
+    grid-area: about;
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

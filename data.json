@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Pizza Order",
+        "location": "https://luixf.bitbucket.io/pizzaOrders/",
+        "image": "image/portfolio/pizza.png",
+        "description": "Interactive pizza ordering system user interface"
+    },
+
+    {
+        "name": "Website Redesign",
+        "location": "https://luixf.bitbucket.io/redesign/elmilagro.pdf",
+        "image": "image/portfolio/redesign.jpg",
+        "description": "I redesign the website of a real company" 
+    },
+    {
+        "name": "Flores Painting",
+        "location": "https://luixf.bitbucket.io/florespainting/",
+        "image": "image/portfolio/florespainting.png",
+        "description": "My first website design about a paiting company"  
+    },
+    {
+        "name": "Form Validation and Ajax",
+        "location": "https://luixf.bitbucket.io/form/",
+        "image": "image/portfolio/form.png",
+        "description": "From validator that send data using AJAX to an external server" 
+    },
+    {
+        "name": "JavaScript Clock",
+        "location": "https://luixf.bitbucket.io/clock/",
+        "image": "image/portfolio/clock.png",
+        "description": "I use the JavaScript date object to create this elegant clock" 
+    },
+    {
+        "name": "US cities",
+        "location": "https://luixf.bitbucket.io/usCities/",
+        "image": "image/portfolio/uscities.png",
+        "description": "Find information about any city in the US using a fileterd list"
+    },
+    {
+        "name": "JS Libraries",
+        "location": "https://luixf.bitbucket.io/jsLibraries/",
+        "image": "image/portfolio/plugins.png",
+        "description": "The aplication of some JavaScript libraries: JQuery, Particles.js, Fullpage.js"
+    },
+    {
+        "name": "Modal",
+        "location": "https://luixf.bitbucket.io/modals/",
+        "image": "image/portfolio/modal.png",
+        "description": "A clasic gallery that opens the selected image in a modal window"
+    },
+    {
+        "name": "Flex Panels",
+        "location": "https://luixf.bitbucket.io/flexPanels/",
+        "image": "image/portfolio/panels.png",
+        "description": "Interactive explandible panels on click"
+    }
+]
